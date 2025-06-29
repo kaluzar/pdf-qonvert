@@ -1,0 +1,19 @@
+{
+  "resources": [
+    {
+      "pattern": "license.xml"
+    },
+    {
+      "pattern": ".*\\.properties$"
+    },
+    {
+      "pattern": ".*\\.ttf$"
+    },
+    {
+      "pattern": ".*\\.xml$"
+    },
+    {
+      "pattern": "META-INF/.*"
+    }
+  ]
+} 

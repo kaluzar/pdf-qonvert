@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    
+    <servers>
+        <!-- Aspose Repository Credentials -->
+        <server>
+            <id>AsposeJavaAPI</id>
+            <username>maven</username>
+            <password>maven</password>
+        </server>
+    </servers>
+    
+    <mirrors>
+        <!-- Use Maven Central for non-Aspose dependencies -->
+        <mirror>
+            <id>central-mirror</id>
+            <name>Maven Central</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <mirrorOf>*,!AsposeJavaAPI</mirrorOf>
+        </mirror>
+    </mirrors>
+    
+    <profiles>
+        <profile>
+            <id>default-repos</id>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <name>Maven Central</name>
+                    <url>https://repo.maven.apache.org/maven2</url>
+                </repository>
+                <repository>
+                    <id>AsposeJavaAPI</id>
+                    <name>Aspose Java API</name>
+                    <url>https://repository.aspose.com/repo/</url>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+    
+    <activeProfiles>
+        <activeProfile>default-repos</activeProfile>
+    </activeProfiles>
+</settings> 

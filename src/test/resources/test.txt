@@ -1,0 +1,1 @@
+This is a test text file used for testing invalid content type handling in the PDF to DOCX conversion service. 
